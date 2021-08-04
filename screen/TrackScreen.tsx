@@ -23,12 +23,6 @@ const TrackScreen = () => {
             <TouchableOpacity style={styles.button_track} onPress={() => Alert.alert('Simple Button pressed')}>
                 <Text style={styles.text_innerButton}>Track an Item</Text>
             </TouchableOpacity>
-            <View>Test</View>
-            <Text style={styles.text_bold}>Let's start tracking</Text>
-            <Text style={styles.text_description}>Your tracked items will be added here.</Text>
-            <TouchableOpacity style={styles.button_track} onPress={() => Alert.alert('Simple Button pressed')}>
-                <Text style={styles.text_innerButton}>Track an Item</Text>
-            </TouchableOpacity>
         </SafeAreaView>
     )
 }
