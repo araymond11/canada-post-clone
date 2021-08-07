@@ -1,14 +1,17 @@
 import React from 'react';
+import { DrawerActions } from 'react-navigation-drawer';
 import { SafeAreaView, StyleSheet, Text, View, TextInput, Image, TouchableOpacity, Alert} from 'react-native';
 import { Icon } from 'react-native-elements';
 import { color } from 'react-native-elements/dist/helpers';
 
-const TrackScreen = () => {
+const TrackScreen = (props:any) => {
     return(
         <SafeAreaView style={styles.container}>
             <View>
                 <View style={styles.icons}>
-                    <Icon type='feathericons' name='menu' color='white'/>
+                    <TouchableOpacity onPress={()=> {props.navigation.dispatch(DrawerActions.toggleDrawer())}}>
+                        <Icon type='feathericons' name='menu' color='white'/>
+                    </TouchableOpacity>
                     <Icon type='feathericons' name='credit-card' color='white' style={styles.card_icon}/>
                     <Icon type='octicon' name='bell' color='white' style={styles.bell_icon}/>
                 </View>
@@ -30,9 +33,6 @@ const TrackScreen = () => {
 export default TrackScreen;
 
 const styles = StyleSheet.create({
-    safe_container: {
-      height: '100%'
-    },
     container: {
       backgroundColor: '#BF1B1B',
       height: '40%',
