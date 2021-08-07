@@ -1,6 +1,5 @@
 import React from 'react';
-import TrackScreen from './screen/TrackScreen';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import AppNavigator from './navigation/AppNavigator'
 
 export default function App() {

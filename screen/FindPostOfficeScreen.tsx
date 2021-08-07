@@ -1,6 +1,6 @@
 import React from 'react';
 import { DrawerActions } from 'react-navigation-drawer';
-import { SafeAreaView, StyleSheet, Text, View, TextInput, Image, TouchableOpacity, Alert} from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View, TextInput, TouchableOpacity} from 'react-native';
 import { Icon } from 'react-native-elements';
 import MapView from "react-native-maps";
 

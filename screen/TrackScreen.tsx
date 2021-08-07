@@ -2,7 +2,6 @@ import React from 'react';
 import { DrawerActions } from 'react-navigation-drawer';
 import { SafeAreaView, StyleSheet, Text, View, TextInput, Image, TouchableOpacity, Alert} from 'react-native';
 import { Icon } from 'react-native-elements';
-import { color } from 'react-native-elements/dist/helpers';
 
 const TrackScreen = (props:any) => {
     return(
